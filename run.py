@@ -7,7 +7,7 @@ def run_1():
     # grep 명령어 자체도 프로세스에 나타나므로 grep -v를 이용해서 제외한다.
     check_process = str(process_read)
     # 문자열로 변환한다.
-    text_location=check_process.find("_main.py")
+    text_location=check_process.find("main_240114.py")
 
     if ( text_location == -1 ):
         print("not found!")
