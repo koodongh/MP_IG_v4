@@ -16,7 +16,7 @@ import cv2
 import gc
 import os
 import sys
-import send_240112
+import send_240114
 import multiprocessing
 
 g_cameraStatusUserInfo = b"statusInfo"
@@ -25,7 +25,7 @@ global m_n
 m_n = '2901'
 
 def run_send_240112(m_n):
-    send_240112.run(m_n)
+    send_240114.run(m_n)
 
 
 def restart():
@@ -589,7 +589,6 @@ def demo():
         else:   
             os.mkdir(r_)        
         t = '/home/user/_SEND/'
-        #m_n = 'M1907'
         t1 = t +'M'+m_n +'.jpg'
         img_c = cv2.resize(cvImage,(2048,2048),interpolation=cv2.INTER_LANCZOS4) 
         cv2.imwrite(t1,img_c)    
